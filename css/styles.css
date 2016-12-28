@@ -8,7 +8,6 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
-	/*font-family: 'Open Sans', sans-serif;*/
 	font-size: 100%;
 	font-weight: 100;
 	
@@ -65,8 +64,7 @@ nav {
   position: fixed;
   top: 0;
   /*width: 100%;*/
-  z-index: 5;
-  /*margin-left: 20px;*/
+  z-index: 400;
   display: none;
   padding-left: 20px;
   padding-bottom: 13px;
@@ -78,10 +76,7 @@ nav a {
   color: black;
   font-size: .5em;
   font-weight: 600;
- /* padding-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;*/
-  /*display: inline-block;*/ 
+ 
 }
 
 nav img{
@@ -99,6 +94,34 @@ nav img{
 	nav img{ width: 25%;}
 
 }
+
+/*--- nav on interior pages---*/
+
+.nav-interior-pages{
+	background-color: white;
+  	position: fixed;
+  	top: 0;
+  	/*width: 100%;*/
+  	z-index: 400;
+  	padding-left: 20px;
+  	padding-bottom: 13px;
+  	padding-top: 13px;
+}
+
+.nav-interior-pages img{
+	width: 8%;
+	box-shadow: none;
+	display: inline-block;
+	}
+
+.top-margin{
+	margin-top: 50px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.nav-interior-pages img{ width: 25%;}
+	.top-margin{ margin-top: 30px;}
+	}
 
 /*END NAVIGATION*/
 
@@ -222,6 +245,7 @@ img{
 
 .image-slider{
 	box-shadow: 7px 10px 10px #C3C2C4;
+	z-index: 5;
 }
 
 /*END - PROJECT ELEMENTS*/
