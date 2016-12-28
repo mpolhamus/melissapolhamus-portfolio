@@ -1,9 +1,14 @@
 /*Melissa Polhamus*/
+
+/*OVERALL PAGE SETUP*/
+
 * {
 	box-sizing: border-box;
 }
+
 body{
 	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	font-size: 100%;
 	font-weight: 100;
 	
@@ -23,28 +28,6 @@ section{
 }
 
 
-nav {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-  margin-left: 20px;
-}
-
-nav a {
-  color: black;
-  font-size: .5em;
-  font-weight: 600;
-  padding-left: 7px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  display: inline-block;
- 
-}
-
-
-
 .content{
 	position: relative;
 }
@@ -56,6 +39,7 @@ nav a {
 
 .col-1-1{
 	position: relative;
+	z-index: 200;
 }
 
 .col-1-2{
@@ -67,20 +51,92 @@ nav a {
 	bottom: 7%;
 }
 
-
-
 .grid{
 	overflow: visible;
 }
 
+/*END OVERALL PAGE SETUP*/
 
-/*MORE INFO / NEXT BUTTONS*/
+
+/*NAVIGATION*/
+
+nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  /*width: 100%;*/
+  z-index: 400;
+  display: none;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  /*text-align: right;*/
+}
+
+nav a {
+  color: black;
+  font-size: .5em;
+  font-weight: 600;
+}
+
+nav img{
+	width: 8%;
+	box-shadow: none;
+	display: inline-block;
+
+}
+
+.main-nav-scrolled{
+	display: inherit;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	nav img{ width: 25%;}
+
+}
+
+/*--- nav on interior pages---*/
+
+.nav-interior-pages{
+	background-color: white;
+  position: fixed;
+  top: 0;
+  /*width: 100%;*/
+  z-index: 400;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+.nav-interior-pages img{
+	width: 8%;
+	box-shadow: none;
+	display: inline-block;
+
+}
+
+.top-margin{
+	margin-top: 50px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.nav-interior-pages img{ width: 25%;}
+	.top-margin{ margin-top: 30px;}
+
+}
+
+
+/*END NAVIGATION------------------*/
+
+
+
+/*MORE INFO / NEXT BUTTONS----------*/
 
 .triangle, .triangle-next{
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 0 95px 80px;
+	border-width: 0 0 115px 100px;
 	border-color: transparent transparent #000000 transparent;
 	position: absolute;
 	bottom: 0px;
@@ -89,8 +145,7 @@ nav a {
 
 .more-info-txt{
 	color: white;
-	font-size: .6em;
-	font-weight: 300;
+	font-size: .8em;
 	text-align: right;
 	position: absolute;
 	bottom: 5px;
@@ -197,8 +252,6 @@ img{
 }
 
 /*END - PROJECT ELEMENTS*/
-
-
 
 
 /*email graphic contact page*/
