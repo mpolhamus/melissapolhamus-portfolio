@@ -10,6 +10,8 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
 	font-weight: 100;
+	/*background-color: #EBE8E6;*/
+
 	
 }
 
@@ -55,6 +57,55 @@ section{
 }
 
 /*END OVERALL PAGE SETUP*/
+
+
+/*LANDING PAGE MAIN LOGO/BIO*/
+
+.MP-logo img{
+	cursor: pointer;
+}
+
+.MP-logo-hidden{
+	display: none;
+}
+
+.black-logo-hidden{
+	display:none;
+}
+
+
+.white-logo-hidden{
+	display: none;
+
+}
+
+.white-logo-visible{
+	display: inherit;
+}
+
+.MP-bio{
+	padding-left: 20px; 
+	font-size: 7em;
+	font-weight: 900;
+}
+
+.MP-bio-hidden{
+	display: none;
+}
+
+/*.MP-bio-open{
+	display: inherit;
+}
+
+.MP-bio img{
+	width: 100%;
+}*/
+
+.gray-background{
+	background-color: #EBE8E6;
+}
+
+
 
 
 /*NAVIGATION*/
