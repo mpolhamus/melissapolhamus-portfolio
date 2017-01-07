@@ -8,6 +8,14 @@ $(window).scroll(function() {
 });
 
 
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 670 ) {
+    $("footer a").addClass("footer-scrolled");
+  } else {
+    $("footer a").removeClass("footer-scrolled");
+  }
+});
+
 
 
 
