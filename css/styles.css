@@ -7,7 +7,8 @@
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Hind Guntur', sans-serif;
 	font-size: 100%;
 	font-weight: 100;
 	/*background-color: #EBE8E6;*/
@@ -104,7 +105,9 @@ section{
 	font-size: 7em;
 	font-weight: 900;
 	line-height: 90%;
+	letter-spacing: -3px;
 	margin: 0;
+
 }
 
 .bio-txt h2{
@@ -114,6 +117,8 @@ section{
 	margin-top: .5em;
 
 }
+
+
 
 @media (max-width: 979px) and (min-width: 768px){
 	.bio-txt h1{
@@ -134,9 +139,10 @@ section{
 
 @media (max-width: 767px){
 	.bio-txt h1{
-		font-size: 3.5em;
+		font-size: 3em;
 		font-weight: 900;
 		line-height: 90%;
+		letter-spacing: -.5px;
 		margin: 0;
 	}
 
@@ -154,6 +160,7 @@ section{
 		font-size: 10em;
 		font-weight: 900;
 		line-height: 90%;
+		letter-spacing: -3px;
 		margin: 0;
 	}
 
